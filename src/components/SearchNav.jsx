@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Search({setOpen, setOpenCities, setOpenAge,setGuests,citySelected, numberOfGuests}) {
+export default function SearchNav({setOpen, setOpenCities, setOpenAge,setGuests,citySelected, numberOfGuests}) {
  
   
     return (

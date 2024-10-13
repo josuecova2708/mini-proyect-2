@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Search from './components/search'
+
 import Modal from './components/Modal'
 import axios from 'axios'
 import ListPlaces from './components/ListPlaces'
+import SearchNav from './components/SearchNav'
 
 function App() {
   const [places, setPlaces] = useState([])
@@ -14,7 +15,7 @@ function App() {
   const [citySelected, setCitySelected] = useState("Finland");
  const [counter,setCounter] =useState(0)
 
- 
+
   useEffect(() => {
     axios.get("./stays.json")
       .then(data => setPlaces(data.data))
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <div className=' min-h-screen  max-w-screen-xl mx-auto'>
-        <Search
+        <SearchNav
           setOpen={() => setOpen(true)}
           setOpenCities={setOpenCities}
           setOpenAge={setOpenAge}
