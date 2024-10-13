@@ -35,7 +35,7 @@ export default function Modal({ setOpen, openCities, openAge, setGuests, setCity
               }} className='w-full h-1/2 text-start text-sm ps-5
                md:w-5/12 md:border-none  md:h-full'>
             <span className='font-bold'>Guests</span> <br />
-            <span className=' text-gray-600'>{localGuests}</span>
+            <span className=' text-gray-700'>{localGuests}</span>
           </button>
             <button onClick={handleSearch}
           className='bg-orange-600 w-28 h-9 items-center rounded-md text-white mx-auto mt-auto mb-4 flex gap-2 justify-center hover:bg-orange-500 hidden md:block md:h-full md:w-2/12 '>

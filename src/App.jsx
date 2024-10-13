@@ -14,7 +14,7 @@ function App() {
   const [citySelected, setCitySelected] = useState("Finland");
  const [counter,setCounter] =useState(0)
 
-
+ 
   useEffect(() => {
     axios.get("./stays.json")
       .then(data => setPlaces(data.data))
